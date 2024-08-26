@@ -120,6 +120,8 @@ LANGUAGE_CODE = 'en-us'
 
 TIME_ZONE = 'Asia/Tehran'
 
+DATE_INPUT_FORMATS =  ["%Y-%m-%d %H:%M:%S"]
+
 USE_L10N = True
 
 USE_I18N = True
