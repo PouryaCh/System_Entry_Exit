@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'rest_framework',
     'users.apps.UsersConfig',
     'rest_framework.authtoken',
+    'import_export',
 ]
 
 MIDDLEWARE = [
@@ -107,7 +108,7 @@ AUTH_USER_MODEL = 'users.Users'
 
 REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': [
-        'rest_framework.authentication.TokenAuthentication',
+        # 'rest_framework.authentication.TokenAuthentication',
         
     ],
 }
@@ -120,7 +121,7 @@ LANGUAGE_CODE = 'en-us'
 
 TIME_ZONE = 'Asia/Tehran'
 
-DATE_INPUT_FORMATS =  ["%Y-%m-%d %H:%M:%S"]
+# DATE_INPUT_FORMATS =  ["%Y-%m-%d %H:%M:%S"]
 
 USE_L10N = True
 

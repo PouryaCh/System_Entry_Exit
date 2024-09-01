@@ -2,6 +2,9 @@ from django.db import models
 import uuid
 from django.contrib.auth.models import AbstractUser, BaseUserManager
 from django.contrib.auth.models import Group, Permission
+# import pandas
+# from import_export import resources
+
 
 
 
@@ -79,5 +82,9 @@ class UserActivity(models.Model):
     
     def __str__(self):
         return f"{self.user} - {self.login} - {self.logout}"
+
+
+
+
     
     
